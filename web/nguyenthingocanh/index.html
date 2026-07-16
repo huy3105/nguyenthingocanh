@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nguyễn Thị Ngọc Anh</title>
+    <meta name="description" content="Portfolio cá nhân của Nguyễn Thị Ngọc Anh - Sinh viên Kinh tế Phát triển, VNU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ambient glow background -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Floating particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-gradient">NA</span>
+                <span class="logo-dot">.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link" data-section="about">Giới thiệu</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Dự án</a></li>
+                <li><a href="#summary" class="nav-link" data-section="summary">Tổng kết</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme" title="Chuyển đổi chủ đề">
+                    <i class="ph ph-sun-horizon" id="theme-icon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile nav -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#about" class="mobile-nav-link">Giới thiệu</a>
+            <a href="#projects" class="mobile-nav-link">Dự án</a>
+            <a href="#summary" class="mobile-nav-link">Tổng kết</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <section id="about" class="hero-section">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-eyebrow reveal-up">
+                        <span class="eyebrow-dot"></span>
+                        <span>Xin chào, tôi là</span>
+                    </div>
+
+                    <h1 class="hero-title reveal-up delay-1">
+                        Nguyễn Thị<br>
+                        <span class="gradient-text">Ngọc Anh</span>
+                    </h1>
+
+                    <p class="hero-subtitle reveal-up delay-2">
+                        Sinh viên ngành <span class="highlight">Kinh tế Phát triển</span> — khám phá thế giới số với đam mê và trách nhiệm.
+                    </p>
+
+                    <!-- Info Cards -->
+                    <div class="info-cards reveal-up delay-3">
+                        <div class="info-chip">
+                            <i class="ph ph-identification-card"></i>
+                            <span>MSV: <strong>25050475</strong></span>
+                        </div>
+                        <div class="info-chip">
+                            <i class="ph ph-book-open"></i>
+                            <span>Kinh tế Phát triển</span>
+                        </div>
+                        <div class="info-chip">
+                            <i class="ph ph-chalkboard-teacher"></i>
+                            <span>VNU1001_E252042</span>
+                        </div>
+                        <div class="info-chip">
+                            <i class="ph ph-music-notes"></i>
+                            <span>Nhạc · Phim · Nấu ăn</span>
+                        </div>
+                    </div>
+
+                    <!-- Goal Cards -->
+                    <div class="goal-grid reveal-up delay-4">
+                        <div class="goal-card">
+                            <div class="goal-card-icon">
+                                <i class="ph ph-rocket-launch"></i>
+                            </div>
+                            <div class="goal-card-body">
+                                <h3>Mục tiêu học tập</h3>
+                                <p>Nắm vững công nghệ số và vận dụng Generative AI một cách có đạo đức để tăng hiệu suất học tập và nghiên cứu chuyên sâu.</p>
+                            </div>
+                        </div>
+                        <div class="goal-card goal-card--accent">
+                            <div class="goal-card-icon">
+                                <i class="ph ph-layout"></i>
+                            </div>
+                            <div class="goal-card-body">
+                                <h3>Mục tiêu Portfolio</h3>
+                                <p>Tổng hợp và lưu trữ kết quả 6 bài tập lớn — làm minh chứng năng lực và tự đánh giá sự tiến bộ qua từng giai đoạn.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scroll Indicator -->
+                    <div class="scroll-hint reveal-up delay-5">
+                        <span>Kéo xuống để khám phá</span>
+                        <div class="scroll-arrow">
+                            <i class="ph ph-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS SECTION ========== -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <div class="section-tag">
+                        <i class="ph ph-folder-open"></i>
+                        <span>Các bài tập</span>
+                    </div>
+                    <h2 class="section-title">Dự án đã thực hiện</h2>
+                    <p class="section-subtitle">Tập hợp các bài tập và quá trình nghiên cứu trong môi trường số — môn Công nghệ số.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card reveal-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-card-inner">
+                            <div class="project-meta">
+                                <span class="project-num">01</span>
+                                <span class="project-badge badge-purple">Bài tập 1</span>
+                            </div>
+                            <div class="project-icon-wrap">
+                                <i class="ph ph-desktop"></i>
+                            </div>
+                            <h3 class="project-title">Máy tính và các thiết bị ngoại vi</h3>
+                            <div class="project-detail">
+                                <p class="project-objective"><span class="tag-label">Mục tiêu</span> Tìm hiểu cấu trúc máy tính và vai trò của các thiết bị ngoại vi trong thời đại số.</p>
+                                <p class="project-summary"><span class="tag-label">Tóm tắt</span> Phân tích các thành phần cốt lõi của máy tính và khảo sát xu hướng phần cứng hiện đại.</p>
+                            </div>
+                            <a href="https://docs.google.com/document/d/1Zy7b4K-fFcIWniOjbtqTiKej2sNxsg6M/edit?usp=drive_link&ouid=111575639705195883726&rtpof=true&sd=true" target="_blank" class="project-btn">
+                                <i class="ph ph-arrow-square-out"></i>
+                                <span>Xem sản phẩm</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-card-inner">
+                            <div class="project-meta">
+                                <span class="project-num">02</span>
+                                <span class="project-badge badge-pink">Bài tập 2</span>
+                            </div>
+                            <div class="project-icon-wrap">
+                                <i class="ph ph-magnifying-glass-plus"></i>
+                            </div>
+                            <h3 class="project-title">Khai thác dữ liệu và thông tin</h3>
+                            <div class="project-detail">
+                                <p class="project-objective"><span class="tag-label">Mục tiêu</span> Rèn kỹ năng tìm kiếm, đánh giá và tổ chức thông tin từ nhiều nguồn dữ liệu.</p>
+                                <p class="project-summary"><span class="tag-label">Tóm tắt</span> Sử dụng công cụ tìm kiếm nâng cao, phân loại và trích xuất thông tin để lập báo cáo.</p>
+                            </div>
+                            <a href="https://docs.google.com/document/d/1NT70uLU0P9lypGVkPul2CGOmrNJpNzef/edit?usp=drive_link&ouid=111575639705195883726&rtpof=true&sd=true" target="_blank" class="project-btn">
+                                <i class="ph ph-arrow-square-out"></i>
+                                <span>Xem sản phẩm</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-card-inner">
+                            <div class="project-meta">
+                                <span class="project-num">03</span>
+                                <span class="project-badge badge-cyan">Bài tập 2</span>
+                            </div>
+                            <div class="project-icon-wrap">
+                                <i class="ph ph-brain"></i>
+                            </div>
+                            <h3 class="project-title">Tổng quan về Trí tuệ nhân tạo</h3>
+                            <div class="project-detail">
+                                <p class="project-objective"><span class="tag-label">Mục tiêu</span> Nắm rõ các khái niệm AI, Machine Learning, Deep Learning và ứng dụng thực tiễn.</p>
+                                <p class="project-summary"><span class="tag-label">Tóm tắt</span> Nghiên cứu lịch sử AI và phân tích các trường hợp tự động hoá công việc trong thực tế.</p>
+                            </div>
+                            <a href="https://drive.google.com/file/d/19GoYuVhhG03n1EqpDEi7WOUJ_ajZejHr/view?usp=drive_link" target="_blank" class="project-btn">
+                                <i class="ph ph-arrow-square-out"></i>
+                                <span>Xem sản phẩm</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-card-inner">
+                            <div class="project-meta">
+                                <span class="project-num">04</span>
+                                <span class="project-badge badge-purple">Bài tập 3</span>
+                            </div>
+                            <div class="project-icon-wrap">
+                                <i class="ph ph-chat-circle-dots"></i>
+                            </div>
+                            <h3 class="project-title">Giao tiếp & Hợp tác số</h3>
+                            <div class="project-detail">
+                                <p class="project-objective"><span class="tag-label">Mục tiêu</span> Phát triển kỹ năng làm việc nhóm từ xa, sử dụng các nền tảng cộng tác số.</p>
+                                <p class="project-summary"><span class="tag-label">Tóm tắt</span> Thực hành làm việc nhóm qua Google Workspace, tổ chức và phân chia công việc trực tuyến.</p>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1Tbl2f5WPBgomsqbQ6tpY0Kx-2gLqZ4zF/view?usp=drive_link" target="_blank" class="project-btn">
+                                <i class="ph ph-arrow-square-out"></i>
+                                <span>Xem sản phẩm</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-card-inner">
+                            <div class="project-meta">
+                                <span class="project-num">05</span>
+                                <span class="project-badge badge-pink">Bài tập 2</span>
+                            </div>
+                            <div class="project-icon-wrap">
+                                <i class="ph ph-pencil-ruler"></i>
+                            </div>
+                            <h3 class="project-title">Sáng tạo nội dung số</h3>
+                            <div class="project-detail">
+                                <p class="project-objective"><span class="tag-label">Mục tiêu</span> Áp dụng công cụ AI và phần mềm thiết kế để sáng tạo nội dung đa phương tiện.</p>
+                                <p class="project-summary"><span class="tag-label">Tóm tắt</span> Sử dụng Generative AI để lên ý tưởng, biên tập và thiết kế các ấn phẩm truyền thông số.</p>
+                            </div>
+                            <a href="https://docs.google.com/document/d/1h4_6FGfCV7gOmbQ0nVmC5k2C6RU02hFi/edit?usp=drive_link&ouid=111575639705195883726&rtpof=true&sd=true" target="_blank" class="project-btn">
+                                <i class="ph ph-arrow-square-out"></i>
+                                <span>Xem sản phẩm</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-card-inner">
+                            <div class="project-meta">
+                                <span class="project-num">06</span>
+                                <span class="project-badge badge-cyan">Bài tập 4</span>
+                            </div>
+                            <div class="project-icon-wrap">
+                                <i class="ph ph-shield-check"></i>
+                            </div>
+                            <h3 class="project-title">An toàn & Liêm chính học thuật</h3>
+                            <div class="project-detail">
+                                <p class="project-objective"><span class="tag-label">Mục tiêu</span> Đảm bảo đạo đức, bảo mật thông tin và quyền SHTT khi hoạt động trên môi trường mạng.</p>
+                                <p class="project-summary"><span class="tag-label">Tóm tắt</span> Nhận diện tin giả, bảo mật thông tin cá nhân và trích dẫn chuẩn xác trong nghiên cứu.</p>
+                            </div>
+                            <a href="https://docs.google.com/document/d/1jxYVkywysbSiRBY0xpZ34MCdJYCCQzEj/edit?usp=drive_link&ouid=111575639705195883726&rtpof=true&sd=true" target="_blank" class="project-btn">
+                                <i class="ph ph-arrow-square-out"></i>
+                                <span>Xem sản phẩm</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SUMMARY SECTION ========== -->
+        <section id="summary" class="summary-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <div class="section-tag">
+                        <i class="ph ph-sparkle"></i>
+                        <span>Tổng kết</span>
+                    </div>
+                    <h2 class="section-title">Cảm nhận & Bài học</h2>
+                    <p class="section-subtitle">Những trải nghiệm giá trị từ hành trình xây dựng Portfolio này.</p>
+                </div>
+
+                <div class="summary-grid">
+                    <div class="summary-card reveal-card">
+                        <div class="summary-icon">
+                            <i class="ph ph-star-four"></i>
+                        </div>
+                        <h3>Trải nghiệm & Cảm nhận</h3>
+                        <p>Quá trình xây dựng Portfolio không chỉ là cơ hội để hệ thống lại kiến thức mà còn giúp tôi nhìn nhận lại hành trình học tập của mình. Tôi cảm thấy tự hào khi có không gian số của riêng mình để lưu trữ và chia sẻ những nỗ lực đã qua.</p>
+                        <div class="card-shine"></div>
+                    </div>
+
+                    <div class="summary-card reveal-card">
+                        <div class="summary-icon summary-icon--pink">
+                            <i class="ph ph-lightbulb-filament"></i>
+                        </div>
+                        <h3>Kiến thức & Kỹ năng</h3>
+                        <p>Tôi đã nâng cao các kỹ năng số từ khai thác dữ liệu an toàn, sử dụng AI sáng tạo, đến tối ưu hoá làm việc nhóm trực tuyến. Đặc biệt, tư duy về liêm chính học thuật và đạo đức số được củng cố mạnh mẽ qua từng bài học.</p>
+                        <div class="card-shine"></div>
+                    </div>
+
+                    <div class="summary-card reveal-card">
+                        <div class="summary-icon summary-icon--cyan">
+                            <i class="ph ph-path"></i>
+                        </div>
+                        <h3>Tâm đắc & Thách thức</h3>
+                        <p><strong style="color: var(--primary-light)">Tâm đắc:</strong> Khả năng ứng dụng Generative AI để biến ý tưởng thô thành sản phẩm hoàn thiện là điều tôi ấn tượng nhất.</p>
+                        <p><strong style="color: var(--accent-pink)">Thách thức:</strong> Tổ chức lượng lớn thông tin một cách logic và đẹp mắt đòi hỏi tư duy hệ thống — đây cũng là kỹ năng tôi rèn luyện được nhiều nhất.</p>
+                        <div class="card-shine"></div>
+                    </div>
+                </div>
+
+                <!-- Stats bar -->
+                <div class="stats-bar reveal-up">
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="6">0</span>
+                        <span class="stat-label">Bài tập hoàn thành</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="1">0</span>
+                        <span class="stat-label">Học kỳ</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="3">0</span>
+                        <span class="stat-label">Kỹ năng số mới</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <p class="footer-name">Nguyễn Thị Ngọc Anh</p>
+                <p class="footer-copy">&copy; 2026 · Portfolio cá nhân · VNU1001_E252042</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
